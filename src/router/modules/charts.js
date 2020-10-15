@@ -29,6 +29,18 @@ const chartsRouter = {
       component: () => import('@/views/charts/mix-chart'),
       name: 'MixChart',
       meta: { title: 'Mix Chart', noCache: true }
+    },
+    {
+      path: 'geo-map',
+      component: () => import('@/views/charts/geo-map'),
+      name: 'GeoMap',
+      meta: { title: 'Geo Map', noCache: true }
+    },
+    {
+      path: 'baidu-map',
+      component: () => import('@/views/charts/baidu-map'),
+      name: 'BaiduMap',
+      meta: { title: 'Baidu Map', noCache: true }
     }
   ]
 }
