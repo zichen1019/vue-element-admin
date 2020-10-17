@@ -221,17 +221,19 @@ export default {
           layoutSize: '125%',
           layoutCenter: ['50%', '50%'], // 地图位置
           label: {
-            emphasis: {
-              show: false
-            }
+            show: false
           },
           roam: true,
           itemStyle: {
-            normal: {
-              areaColor: '#323c48',
-              borderColor: '#404a59'
+            areaColor: '#323c48',
+            borderColor: '#404a59'
+          },
+          emphasis: {
+            label: {
+              show: true,
+              color: '#FFFF00'
             },
-            emphasis: {
+            itemStyle: {
               areaColor: '#2a333d'
             }
           }
