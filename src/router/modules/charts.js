@@ -41,6 +41,12 @@ const chartsRouter = {
       component: () => import('@/views/charts/baidu-map'),
       name: 'BaiduMap',
       meta: { title: 'Baidu Map', noCache: true }
+    },
+    {
+      path: 'gaode-map',
+      component: () => import('@/views/charts/gaode-map'),
+      name: 'GaodeMap',
+      meta: { title: 'Gaode Map', noCache: true }
     }
   ]
 }
