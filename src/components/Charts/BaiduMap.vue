@@ -6,7 +6,7 @@
 import echarts from 'echarts'
 import resize from './mixins/resize'
 import 'echarts/map/js/china'
-import loadBMap from '@/utils/import-js'
+import { loadBMap } from '@/utils/import-js'
 require('echarts/extension/bmap/bmap')
 
 export default {
