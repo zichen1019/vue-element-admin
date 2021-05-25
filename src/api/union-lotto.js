@@ -1,4 +1,4 @@
-import api from '@/utils/api'
+import api from '@/utils/request'
 
 // 获取所有福利彩票信息
 export function getUnionLotto() {
