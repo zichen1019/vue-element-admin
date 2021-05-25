@@ -121,6 +121,19 @@ export const constantRoutes = [
         meta: { title: 'Profile', icon: 'user', noCache: true }
       }
     ]
+  },
+  {
+    path: '/navigation',
+    component: Layout,
+    redirect: '/navigation/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/navigation/index'),
+        name: 'Navigation',
+        meta: { title: 'Navigation', icon: 'guide', noCache: true }
+      }
+    ]
   }
 ]
 
@@ -379,6 +392,27 @@ export const asyncRoutes = [
       {
         path: 'https://github.com/PanJiaChen/vue-element-admin',
         meta: { title: 'External Link', icon: 'link' }
+      }
+    ]
+  },
+
+  {
+    path: '/unionLotto',
+    component: Layout,
+    alwaysShow: true,
+    meta: { title: 'unionLotto', icon: 'money' },
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/union-lotto/index'),
+        name: 'UnionLotto',
+        meta: { title: 'diagram', icon: 'money' }
+      },
+      {
+        path: 'calculation',
+        component: () => import('@/views/union-lotto/calculation'),
+        name: 'WinningProbability',
+        meta: { title: 'winningProbability', icon: 'money' }
       }
     ]
   },
