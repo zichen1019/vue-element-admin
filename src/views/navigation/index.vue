@@ -141,8 +141,8 @@ export default {
     }
   },
   watch: {
-    tags: function() {
-      this.getList()
+    tags() {
+      this.getWebsiteList()
     }
   },
   created() {

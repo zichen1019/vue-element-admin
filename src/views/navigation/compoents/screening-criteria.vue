@@ -138,15 +138,17 @@ export default {
       this.multipleChoice.length = 0
     },
     commitMoreChoice() {
-      if (this.multipleChoice.length) {
-        this.tags.push({
-          name: this.multipleChoice.slice(),
-          classification: this.scData.classification
-        })
+      if (!this.multipleChoice.length) {
+        this.hiddenMoreChoice()
+        return
       }
+      this.tags.push({
+        name: this.multipleChoice.slice(),
+        classification: this.scData.classification
+      })
+      this.hiddenMoreConditions()
       this.scData.show = false
       this.hiddenMoreChoice()
-      this.hiddenMoreConditions()
     }
   }
 }
